@@ -39,7 +39,8 @@ ex)
   ...
 
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnSave": true
   },
   "python.formatting.blackArgs": ["--line-length", "80"],
   "python.formatting.provider": "black",
@@ -48,7 +49,7 @@ ex)
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": false,
 
-...
+  ...
 ```
 
 ## Manually check and format
