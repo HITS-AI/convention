@@ -39,15 +39,20 @@ ex)
   ...
 
   "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
     "editor.defaultFormatter": "ms-python.python",
-    "editor.formatOnSave": true
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
   },
+  "python.analysis.autoImportCompletions": false,
+  "python.analysis.typeCheckingMode": "basic",
   "python.formatting.blackArgs": ["--line-length", "80"],
   "python.formatting.provider": "black",
-  "python.linting.pylintEnabled": true,
   "python.languageServer": "Pylance",
-  "python.analysis.typeCheckingMode": "basic",
-  "python.analysis.autoImportCompletions": false,
+  "python.linting.pylintEnabled": true,
+  "python.sortImports.args": ["--profile", "black"],
 
   ...
 ```
