@@ -32,7 +32,6 @@ ex)
 - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 - [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
-- [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 - [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
@@ -49,6 +48,7 @@ ex)
 ```json
   ...
 
+  "editor.bracketPairColorization.enabled": true,
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
