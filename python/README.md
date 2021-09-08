@@ -5,6 +5,11 @@
 - [PEP 8](https://www.python.org/dev/peps/pep-0008/)
 - [Google docstring style](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings)
 
+## Version scheme
+
+- [Semantic Versioning 2.0.0](https://semver.org/)
+- [PEP 440](https://www.python.org/dev/peps/pep-0440/)
+
 ## Installation
 
 If you install `Python` extension on VScode, Vscode will ask if you want to install the program below. Press `yes`.
