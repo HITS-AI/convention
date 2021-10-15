@@ -54,6 +54,7 @@ ex)
   ...
 
   "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
