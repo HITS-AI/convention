@@ -55,6 +55,8 @@ ex)
 
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
+  "git-graph.repository.fetchAndPrune": true,
+  "git.pruneOnFetch": true,
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
@@ -70,7 +72,7 @@ ex)
   "python.languageServer": "Pylance",
   "python.linting.pylintEnabled": true,
   "python.sortImports.args": ["--profile", "black"],
-
+  
   ...
 ```
 
