@@ -51,9 +51,8 @@ ex)
 - Add below configuration
 
 ```json
-  ...
-
   "editor.bracketPairColorization.enabled": true,
+  "editor.formatOnSave": true,
   "editor.guides.bracketPairs": true,
   "git-graph.repository.fetchAndPrune": true,
   "git.pruneOnFetch": true,
@@ -72,8 +71,7 @@ ex)
   "python.languageServer": "Pylance",
   "python.linting.pylintEnabled": true,
   "python.sortImports.args": ["--profile", "black"],
-  
-  ...
+  "vim.useSystemClipboard": true,
 ```
 
 ## Manually check and format
