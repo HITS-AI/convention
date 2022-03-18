@@ -66,7 +66,6 @@ ex)
   },
   "python.analysis.autoImportCompletions": false,
   "python.analysis.typeCheckingMode": "basic",
-  "python.formatting.blackArgs": ["--line-length", "80"],
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.linting.pylintEnabled": true,
@@ -85,5 +84,5 @@ pylint **/*.py
 ### Auto formmat
 
 ```shell
-black -l 80 .
+black .
 ```
