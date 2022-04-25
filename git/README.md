@@ -38,7 +38,7 @@ git checkout -b release/<version> origin/dev
 ```
 
 ```shell
-git commit --allow-empty -m "release/<version>-rc.1"
+git commit --allow-empty -m "release: <version>-rc.1"
 ```
 
 - rc: Release Candidates, rc.1 -> rc.2 순으로 진행합니다.
