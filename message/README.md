@@ -11,6 +11,7 @@
 
 - `error`: `int`, 사전 정의된 에러 코드
 - `msg`: `string`, 사람이 식별할 수 있는 에러 메시지
+- 기타 필요한 정보는 Optional입니다.
 
 ## Event & Command
 
