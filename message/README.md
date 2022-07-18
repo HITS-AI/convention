@@ -4,14 +4,16 @@
 
 ```json
 {
-  "error": -1,
-  "msg": "error"
+  "error": {
+    "code": 1,
+    "message": "Invalid Argument"
+  }
 }
 ```
 
-- `error`: `int`, 사전 정의된 에러 코드
-- `msg`: `string`, 사람이 식별할 수 있는 에러 메시지
-- 기타 필요한 정보는 Optional입니다.
+- `code`: `int`, 사전 정의된 에러 코드
+- `message`: `string`, 사람이 식별할 수 있는 에러 메시지
+- 기타 필요한 정보는 Optional
 
 ## Event & Command
 
