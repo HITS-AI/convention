@@ -79,5 +79,9 @@ pylint **/*.py
 ### Auto formmat
 
 ```shell
-black .
+black **/*.py
+```
+
+```shell
+isort --profile black **/*.py
 ```
