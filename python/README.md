@@ -18,15 +18,8 @@ If you install `Python` extension on VScode, Vscode will ask if you want to inst
 python3 -m pip install pylint black isort
 ```
 
-Download [python/.pylintrc](https://github.com/HITS-AI/HITS-convention/blob/main/python/.pylintrc) and save it to a project root path.
-
-ex)
-
 ```shell
-<project>
-├── ...
-├── .pylintrc
-└── ...
+pylint --generate-toml-config >> pyproject.toml
 ```
 
 ## VS Code
@@ -35,6 +28,8 @@ ex)
 
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+- [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
+- [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort)
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 - [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
@@ -60,7 +55,7 @@ ex)
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     },
-    "editor.defaultFormatter": "ms-python.python",
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
@@ -69,7 +64,7 @@ ex)
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.linting.pylintEnabled": true,
-  "python.sortImports.args": ["--profile", "black"],
+  "isort.args": ["--profile", "black"],
   "vim.useSystemClipboard": true,
 ```
 
