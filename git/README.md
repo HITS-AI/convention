@@ -84,21 +84,25 @@ gitGraph
 ### release(stag)
 
 ```shell
+export VERSION=<version>
+```
+
+```shell
 git remote update --prune
 ```
 
 ```shell
-git checkout -b release/<version> origin/dev
+git checkout -b release/$VERSION origin/dev
 ```
 
 ```shell
-git commit --allow-empty -m "release: <version>-rc.1"
+git commit --allow-empty -m "release: $VERSION-rc.1"
 ```
 
 - rc: Release Candidates, rc.1 -> rc.2 순으로 진행합니다.
 
 ```shell
-git push -u origin release/<version>
+git push -u origin release/$VERSION
 ```
 
 ```mermaid
