@@ -24,7 +24,7 @@
   "source": "https://api.oneplatform.hits.ai/ai-docking/<project-id>/submit",
   "id": "2c04c116-19c2-4b59-857e-2f0396ad0e98",
   "time": "2022-07-02T21:59:07.975+09:00",
-  "user_id": 1,
+  "user_id": "1",
   "request_id": "8570baa3-666b-4b6b-9158-6643208354a6",
   "datacontenttype": "application/json",
   "data": {
@@ -41,7 +41,7 @@ https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md 의 형식�
 - `source`: `URI`, 이벤트가 발생한 위치
 - `id`: `UUID`, 이벤트 고유 번호로 이벤트를 생성할 때 같이 생성해주면 됩니다.
 - `time`: `RFC3339, ISO8601`, 이벤트 생성 시간
-- `user_id`: `int`, 요청한 유저 ID
+- `user_id`: `string`, 요청한 유저 ID
 - `request_id`: `UUID`, 요청의 흐름을 파악하기 위한 값
 - `datacontenttype`: `data`를 해석하는 방법
 - `data`: 이벤트를 처리하기위한 도메인 정보
