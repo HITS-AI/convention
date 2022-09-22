@@ -83,39 +83,7 @@ gitGraph
 
 ### release(stag)
 
-```shell
-export VERSION=<version>
-```
-
-```shell
-git remote update --prune
-```
-
-```shell
-git checkout -b release/$VERSION origin/dev
-```
-
-```shell
-git commit --allow-empty -m "release: $VERSION-rc.1"
-```
-
-- rc: Release Candidates, rc.1 -> rc.2 순으로 진행합니다.
-
-```shell
-git push -u origin release/$VERSION
-```
-
-```mermaid
-gitGraph
-  commit id: "init"
-  branch dev
-  checkout dev
-  commit
-  commit
-  branch release
-  checkout release
-  commit
-```
+dev -> rc.1 : https://hits-ai.atlassian.net/wiki/spaces/ONEPLATFOR/pages/589881#dev-%E2%86%92-stag(rc.1)
 
 1. rc2를 생성할 때는 먼저 origin/dev를 base로 하는 로컬 브랜치 생성해서 작업 후 dev에 반영합니다.
 2. dev에서 release로 "release: $VERSION-rc.2" 제목으로 PR로 merge합니다.  
