@@ -117,55 +117,7 @@ gitGraph
 
 ### main
 
-PR from `origin/release/<version>` to `origin/main` -> Merge pull request(title: `release: <version> (#<PR-number>)`)
-
-```mermaid
-gitGraph
-  commit id: "init"
-  branch dev
-  checkout dev
-  commit
-  commit
-  branch release
-  checkout release
-  commit
-  checkout main
-  merge release
-  commit
-```
-
-```shell
-git remote update --prune
-```
-
-```shell
-git checkout origin/main
-```
-
-```shell
-git tag <version>
-```
-
-```shell
-git push --tags
-```
-
-Github 사이트 해당 Repo -> Releases -> Tags -> Create release -> Auto-generate release notes -> Publish release
-
-```mermaid
-gitGraph
-  commit id: "init"
-  branch dev
-  checkout dev
-  commit
-  commit
-  branch release
-  checkout release
-  commit
-  checkout main
-  merge release
-  commit tag: "v0.1.0"
-```
+stag -> main: https://hits-ai.atlassian.net/wiki/spaces/ONEPLATFOR/pages/589881#stag(rc.x)-%E2%86%92-main
 
 ### hotfix
 
