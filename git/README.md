@@ -84,36 +84,7 @@ gitGraph
 ### release(stag)
 
 dev -> rc.1 : https://hits-ai.atlassian.net/wiki/spaces/ONEPLATFOR/pages/589881#dev-%E2%86%92-stag(rc.1)
-
-1. rc2를 생성할 때는 먼저 origin/dev를 base로 하는 로컬 브랜치 생성해서 작업 후 dev에 반영합니다.
-2. dev에서 release로 "release: $VERSION-rc.2" 제목으로 PR로 merge합니다.  
-  *이때 squash merge가 아닌 create merge로 merge합니다.
-3. 이렇게 수행한 git graph는 다음과 같습니다.
-
-```mermaid
-gitGraph
-  commit id: "init"
-  branch dev
-  checkout dev
-  commit
-  commit
-  branch release
-  commit id: "release: v0.1.0-rc.1"
-  checkout dev
-  commit
-  commit
-  checkout release
-  merge dev
-  commit id: "release: v0.1.0-rc2"
-  checkout dev
-  commit
-  commit
-  checkout release
-  merge dev
-  commit id: "release: v0.1.0-rc3"
-  checkout main
-  merge release
-```
+rc.1 -> rc.2 : https://hits-ai.atlassian.net/wiki/spaces/ONEPLATFOR/pages/589881#dev%EC%97%90-%EC%9E%88%EB%8A%94-%EB%AA%A8%EB%93%A0-%EC%B6%94%EA%B0%80-%EA%B0%9C%EB%B0%9C-%EC%82%AC%ED%95%AD%EC%9D%84-stag%EC%97%90-%EB%B0%98%EC%98%81
 
 ### main
 
