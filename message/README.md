@@ -23,7 +23,7 @@
   "type": "aidocking.submit.v1",
   "source": "https://api.oneplatform.hits.ai/ai-docking/<project-id>/submit",
   "id": "2c04c116-19c2-4b59-857e-2f0396ad0e98",
-  "time": "2022-07-02T21:59:07.975+09:00",
+  "time": "2022-07-02T21:59:07.975Z",
   "user_id": "1",
   "request_id": "8570baa3-666b-4b6b-9158-6643208354a6",
   "datacontenttype": "application/json",
