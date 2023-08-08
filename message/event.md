@@ -1,21 +1,6 @@
-## HTTP Response
-
-4XX를 표현할 때, 상태 코드만으로 표현하기 어려운 정보가 있습니다. 400, 401, 403 등과 같이 최대한 표현 가능한 상태 코드를 고르고, 본문에 아래와 같이 사전 정의된 에러 코드를 통해 클라이언트가 에러를 올바르게 처리할 수 있도록 협의하는 것이 좋습니다.
-
-```json
-{
-  "error": {
-    "code": 1,
-    "message": "Invalid Argument"
-  }
-}
-```
-
-- `code`: `int`, 사전 정의된 에러 코드
-- `message`: `string`, 사람이 식별할 수 있는 에러 메시지
-- 기타 필요한 정보는 Optional
-
 ## Event & Command
+
+### V1
 
 ```json
 {
@@ -47,3 +32,32 @@ https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md 의 형식�
 - `data`: 이벤트를 처리하기위한 도메인 정보
 
 CloudEvents 스펙에서는 일반적으로 이벤트 크기가 64KB 이하로 제한되었을 때, 안전하게 전달될 수 있다고 명시하고 있습니다.
+
+### V1.1
+
+protobuf로 정의된 스키마를 사용합니다.
+
+- https://github.com/HITS-AI/schema/blob/main/proto/hschema/event/event_v1.proto
+
+기존 JSON과 호환성을 위해 Consumer는 protobuf 스키마를 사용하고, Producer는 JSON 스키마를 사용합니다.
+관련 Consumer가 protobuf를 사용하게 되면 Producer도 protobuf를 사용하는 방식으로 변경합니다.
+
+#### Golang
+
+```shell
+export VERSION=<version>
+```
+
+```shell
+go get github.com/HITS-AI/schema/gen/go@$VERSION
+```
+
+#### Python
+
+```shell
+export VERSION=<version>
+```
+
+```shell
+poetry add git+ssh://github.com/HITS-AI/schema.git@gen/python/$VERSION#subdirectory=gen/python
+```
