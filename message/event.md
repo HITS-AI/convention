@@ -45,6 +45,10 @@ protobuf로 정의된 스키마를 사용합니다.
 #### Golang
 
 ```shell
+go env -w GOPRIVATE=github.com/HITS-AI
+```
+
+```shell
 export VERSION=<version>
 ```
 
