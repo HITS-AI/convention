@@ -1,5 +1,17 @@
 ## Python convention
 
+### Python 빌드 의존성
+
+```shell
+sudo apt install -y build-essential libssl-dev zlib1g-dev \
+    libbz2-dev libreadline-dev libsqlite3-dev curl \
+    libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+```
+
+```shell
+brew install openssl readline sqlite3 xz zlib tcl-tk
+```
+
 ### Python 버전 관리
 
 ```shell
