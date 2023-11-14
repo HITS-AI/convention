@@ -85,3 +85,24 @@ poetry add <package>
 ```shell
 poetry install --sync
 ```
+
+### 문서화
+
+`reStructuredText`(sphynx)를 사용하여 문서화 하며 타입 정보는 적지 않습니다.
+
+- PyCharm: https://www.jetbrains.com/help/pycharm/documenting-source-code.html
+- VSCode: https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring
+
+```python
+def func(a: int) -> int:
+    """
+    함수 설명
+
+    :param a: 파라미터 a의 설명
+    :raises AssertionError: 에러 설명
+    :return: 반환값 설명
+    """
+    if a > 10:
+        raise AssertionError("a is more than 10")
+    return a
+```
