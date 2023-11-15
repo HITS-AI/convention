@@ -26,9 +26,7 @@ asdf list all python | grep ^3\.
 asdf install python <version>
 ```
 
-### Poetry 가상환경 관리
-
-#### 설치
+### Poetry 설치
 
 - https://python-poetry.org/docs/#installing-with-the-official-installer
 
@@ -52,7 +50,9 @@ Poetry는 가상환경을 프로젝트 내부에 생성하도록 설정을 변�
 poetry config virtualenvs.in-project true
 ```
 
-#### 가상환경 생성
+### Python 프로젝트 관리
+
+#### 프로젝트 생성
 
 ```shell
 asdf local python <version>
