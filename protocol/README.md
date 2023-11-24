@@ -2,8 +2,8 @@
 
 ### HTTP
 
-- [HTTP](protocol/http.md)
+- [HTTP](http.md)
 
 ### Event
 
-- [Event](protocol/event.md)
+- [Event](event.md)
