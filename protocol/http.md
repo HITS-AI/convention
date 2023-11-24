@@ -27,6 +27,7 @@ HTTP Status는 아래 5가지만 사용하며, 401, 403, 404, 429로 나타낼 �
 ```json
 {
   "status": 400,
+  "error": null,
   "errors": [
     {
       "code": 1,
@@ -36,5 +37,6 @@ HTTP Status는 아래 5가지만 사용하며, 401, 403, 404, 429로 나타낼 �
 }
 ```
 
-- `code`: `int`, 사전 정의된 에러 코드
-- `message`: `string`, 사람이 식별할 수 있는 에러 메시지
+- `error`
+  - `code`: `int`, 사전 정의된 에러 코드
+  - `message`: `string`, 사람이 식별할 수 있는 에러 메시지
