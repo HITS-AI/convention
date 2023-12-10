@@ -62,6 +62,8 @@ asdf local python <version>
 poetry init
 ```
 
+`.gitignore`는 [생성 링크](https://www.toptal.com/developers/gitignore?templates=python,linux,macos,windows) 로 생성합니다.
+
 #### 가상환경 활성화
 
 ```shell
